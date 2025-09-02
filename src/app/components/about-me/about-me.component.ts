@@ -11,7 +11,7 @@ export default class AboutMeComponent implements OnInit {
   public ngOnInit(): void {
     AOS.init({
       duration: 3000,
-      once: false,
+      mirror: true,
     });
   }
 }
