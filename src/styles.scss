@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+h1,
+h2,
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    /* títulos marcados */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 56px;
+    /* Para el navbar fijo */
+    font-family: 'Nunito', sans-serif;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+.progress {
+    height: 20px;
+    background-color: #e9ecef;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Para scrolling suave */
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ccc;
+    /* Efecto hover para los enlaces del navbar */
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+    /* Borde blanco tenue para el toggler */
+}
+
+.navbar-dark .navbar-toggler i {
+    font-size: 1.5rem;
+    /* Tamaño del ícono de hamburguesa */
+}
