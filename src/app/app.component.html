@@ -1,44 +1,50 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-lg fixed-top" [ngClass]="mode === 'dark' ? 'dark-theme' : 'light-theme'">
   <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#">My portfolio</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <i class="fas fa-bars text-white"></i>
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-white" href="#perfil">Perfil</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#experiencia">Experiencia</a></li>
-        <li class="nav-item"><a class="nav-link text-white" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item">
+          <button class="btn btn-link nav-link" (click)="toggleTheme()">
+            <i class="fas" [ngClass]="mode === 'dark' ? 'fa-sun' : 'fa-moon'"></i>
+            {{ mode === 'dark' ? 'Light Mode' : 'Dark Mode' }}
+          </button>
+        </li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Sección Perfil (puedes agregar tu info personal aquí) -->
-<section id="perfil" class="container">
- <app-about-me />
+<section id="main-section" [ngClass]="mode === 'dark' ? 'dark-theme' : 'light-theme'">
+  <section id="perfil" class="container mt-4">
+    <app-about-me></app-about-me>
+  </section>
+
+  <section id="experiencia" class="container py-5">
+    <app-expirience></app-expirience>
+  </section>
+
+  <section id="skills" class="container py-5">
+    <app-skills></app-skills>
+  </section>
 </section>
 
-<!-- Sección Experiencia -->
-<section id="experiencia" class="container py-5">
-  <app-expirience />
-</section>
-
-<!-- Sección Skills -->
-<section id="skills" class="container py-5">
-  <app-skills />
-</section>
-
-<footer class="bg-dark text-white text-center py-3 mt-auto">
+<footer [ngClass]="mode === 'dark' ? 'dark-theme' : 'light-theme'" class="text-center py-3 mt-auto">
   <div class="container">
     <div class="d-flex justify-content-center gap-4">
-      <a href="https://www.linkedin.com/in/braian-ismael-chincho-bb1004144/" target="_blank" class="text-white">
+      <a href="https://www.linkedin.com/in/braian-ismael-chincho-bb1004144/" target="_blank">
         <i class="fab fa-linkedin fs-4"></i>
       </a>
-      <a href="https://github.com/braianchincho" target="_blank" class="text-white">
+      <a href="https://github.com/braianchincho" target="_blank">
         <i class="fab fa-github fs-4"></i>
       </a>
-      <a href="mailto:braianchincho@gmail.com" class="text-white">
+      <a href="mailto:braianchincho@gmail.com">
         <i class="fas fa-envelope fs-4"></i>
       </a>
     </div>

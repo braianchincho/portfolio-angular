@@ -2,53 +2,65 @@
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
     /* títulos marcados */
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    padding-top: 56px;
-    /* Para el navbar fijo */
-    font-family: 'Nunito', sans-serif;
+/* Default (light) theme */
+:root, .light-theme {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --nav-background: #212529;
+  --nav-text-color: #ffffff;
+  --link-color: #007bff;
+  --link-hover-color: #0056b3;
 }
 
-main {
-    flex: 1 0 auto;
+/* Dark theme */
+.dark-theme {
+  --background-color: #212529;
+  --text-color: #f8f9fa;
+  --nav-background: #343a40;
+  --nav-text-color: #f8f9fa;
+  --link-color: #66b0ff;
+  --link-hover-color: #99c2ff;
+}
+
+/* Apply theme variables */
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.navbar {
+  background-color: var(--nav-background);
+}
+
+.navbar-brand, .nav-link, .navbar-toggler i {
+  color: var(--nav-text-color) !important;
+}
+
+.nav-link:hover, .navbar-brand:hover {
+  color: var(--link-hover-color) !important;
+}
+
+section {
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 footer {
-    flex-shrink: 0;
+  background-color: var(--nav-background);
+  color: var(--nav-text-color);
 }
 
-.progress {
-    height: 20px;
-    background-color: #e9ecef;
+footer a {
+  color: var(--nav-text-color);
 }
 
-.progress-bar {
-    background-color: #007bff;
-}
-
-html {
-    scroll-behavior: smooth;
-    /* Para scrolling suave */
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #ccc;
-    /* Efecto hover para los enlaces del navbar */
-}
-
-.navbar-dark .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.5);
-    /* Borde blanco tenue para el toggler */
-}
-
-.navbar-dark .navbar-toggler i {
-    font-size: 1.5rem;
-    /* Tamaño del ícono de hamburguesa */
+footer a:hover {
+  color: var(--link-hover-color);
 }
