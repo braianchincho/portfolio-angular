@@ -6,14 +6,23 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
-        <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
-        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#perfil">{{'NAVBAR.PROFILE' | translate}}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experiencia">{{'NAVBAR.EXPERIENCE' | translate}}</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">{{'NAVBAR.SKILLS' | translate}}</a></li>
         <li class="nav-item">
           <button class="btn btn-link nav-link" (click)="toggleTheme()">
             <i class="fas" [ngClass]="mode === 'dark' ? 'fa-sun' : 'fa-moon'"></i>
-            {{ mode === 'dark' ? 'Light Mode' : 'Dark Mode' }}
+            {{ (mode === 'dark' ? 'NAVBAR.MODE.LIGHT' : 'NAVBAR.MODE.DARK') | translate }}
           </button>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">
+            🌐 {{ 'LANG.'+ currentLangLabel() | translate }}
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" (click)="changeLanguage('en')">{{'LANG.EN' | translate}}</a></li>
+            <li><a class="dropdown-item" (click)="changeLanguage('es')">{{'LANG.ES' | translate}}</a></li>
+          </ul>
         </li>
       </ul>
     </div>
@@ -47,6 +56,6 @@
         <i class="fas fa-envelope fs-4"></i>
       </a>
     </div>
-    <p class="mt-2 mb-0">&copy; 2025 Braian Ismael Chincho. Todos los derechos reservados.</p>
+    <p class="mt-2 mb-0">&copy; 2025 Braian Ismael Chincho. {{ 'fOOTER.RIGHT' | translate }}</p>
   </div>
 </footer>

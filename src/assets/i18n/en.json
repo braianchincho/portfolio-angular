@@ -1,0 +1,11 @@
+{
+  "NAVBAR.PROFILE": "Profile",
+  "NAVBAR.EXPERIENCE": "Experience",
+  "NAVBAR.SKILLS": "Skills",
+  "NAVBAR.MODE.DARK": "Dark Mode",
+  "NAVBAR.MODE.LIGHT": "Light Mode",
+  "PROFILE.INFO": "I am Systems Engineer focused on front-end development, specializing in Angular. Proficient in frameworks and technologies such as HTML, CSS, JavaScript, and TypeScript, with knowledge of Node.js, React, Java, and .NET. I have strong problem-solving and teamwork skills, experience in object-oriented programming, and a commitment to writing clean, efficient, and maintainable code.",
+  "fOOTER.RIGHT": "All rights reserved.",
+  "LANG.EN": "English",
+  "LANG.ES": "Spanish"
+}

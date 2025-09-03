@@ -1,0 +1,11 @@
+{
+  "NAVBAR.PROFILE": "Perfil",
+  "NAVBAR.EXPERIENCE": "Experiencia",
+  "NAVBAR.SKILLS": "Habilidades",
+  "NAVBAR.MODE.DARK": "Modo oscuro",
+  "NAVBAR.MODE.LIGHT": "Modo claro",
+  "PROFILE.INFO": "Soy Ingeniero en Sistemas enfocado en el desarrollo front-end, especializado en Angular. Domino frameworks y tecnologías como HTML, CSS, JavaScript y TypeScript, con conocimientos de Node.js, React, Java y .NET. Tengo sólidas habilidades para resolver problemas y trabajar en equipo, experiencia en programación orientada a objetos y un compromiso con la escritura de código limpio, eficiente y mantenible.",
+  "fOOTER.RIGHT": "Todos los derechos reservados.",
+  "LANG.EN": "Inglés",
+  "LANG.ES": "Español"
+}

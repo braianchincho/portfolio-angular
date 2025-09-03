@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslatePipe } from '@ngx-translate/core';
 import * as AOS from 'aos';
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [],
+  imports: [TranslatePipe],
   templateUrl: './about-me.component.html',
   styleUrl: './about-me.component.scss'
 })
