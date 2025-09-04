@@ -7,5 +7,12 @@
   "PROFILE.INFO": "Soy Ingeniero en Sistemas enfocado en el desarrollo front-end, especializado en Angular. Domino frameworks y tecnologías como HTML, CSS, JavaScript y TypeScript, con conocimientos de Node.js, React, Java y .NET. Tengo sólidas habilidades para resolver problemas y trabajar en equipo, experiencia en programación orientada a objetos y un compromiso con la escritura de código limpio, eficiente y mantenible.",
   "fOOTER.RIGHT": "Todos los derechos reservados.",
   "LANG.EN": "Inglés",
-  "LANG.ES": "Español"
+  "LANG.ES": "Español",
+  "SKILLS.TITLE": "Habilidades",
+  "EXPERIENCE.TITLE": "Experiencia",
+  "EXPERIENCE.DESCRIPTION.EPAM": "Migración y modernización de la plataforma de back-office de gestión de proyectos de Thomson Reuters para proyectos en EE. UU. C#, ASP.NET Core, PostgreSQL, Angular 18, RxJS, Stencil.js",
+  "EXPERIENCE.DESCRIPTION.VATES": "Migración y modernización de la plataforma de back-office de gestión de proyectos de Thomson Reuters, para equipos en Argentina y Estados Unidos. C#, ASP.NET Core, Angular, Entity Framework, PostgreSQL",
+  "EXPERIENCE.DESCRIPTION.BIZIT": "Desarrollo de una plataforma de back-office para una empresa europea del sector salud.\nAngular, TypeScript, RxJS, Jasmine, Karma, Protractor,Java, Spring Boot",
+  "EXPERIENCE.DESCRIPTION.KOLEKTOR": "Desarrollo de un sistema web de consulta y recaudación de impuestos para la provincia de Córdoba, Argentina.\nAngular 7, Java, Spring Boot, MySQL",
+  "EXPERIENCE.DESCRIPTION.MCAFEE": "Contribuí en un proyecto encargado de mantener un software de seguridad basado en listas blancas. Python, Django REST Framework, HTML, CSS, Bash, AngularJS, Bootstrap"
 }

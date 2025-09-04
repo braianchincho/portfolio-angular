@@ -7,5 +7,12 @@
   "PROFILE.INFO": "I am Systems Engineer focused on front-end development, specializing in Angular. Proficient in frameworks and technologies such as HTML, CSS, JavaScript, and TypeScript, with knowledge of Node.js, React, Java, and .NET. I have strong problem-solving and teamwork skills, experience in object-oriented programming, and a commitment to writing clean, efficient, and maintainable code.",
   "fOOTER.RIGHT": "All rights reserved.",
   "LANG.EN": "English",
-  "LANG.ES": "Spanish"
+  "LANG.ES": "Spanish",
+  "SKILLS.TITLE": "Skills",
+  "EXPERIENCE.TITLE": "Experience",
+  "EXPERIENCE.DESCRIPTION.EPAM": "Migration and modernization of Thomson Reuters' project management back-office platform for USA Projects.\nC#, ASP.NET core, Postgresql, Angular 18,RxJS, Stencil.js",
+  "EXPERIENCE.DESCRIPTION.VATES": "Migration and modernization of Thomson Reuters' project management back-office platform, for teams in Argentina and the United States.\nC#, ASP.NET core, Angular, Entity Framework, Postgresql",
+  "EXPERIENCE.DESCRIPTION.BIZIT": "Development of a back-office platform for aEuropean healthcare company.\nAngular, TypeScript, RxJS, Jasmine, Karma, Protractor,Java, Spring Boot",
+  "EXPERIENCE.DESCRIPTION.KOLEKTOR": "Development of a web-based tax inquiry and collection system for the province of Córdoba, Argentina.\nAngular 7, Java, Spring Boot, MySQL",
+  "EXPERIENCE.DESCRIPTION.MCAFEE": "I contributed to a project responsible for maintaining whitelist-based security software.\nPython, Django REST Framework, HTML, CSS, Bash, AngularJS, Bootstrap"
 }

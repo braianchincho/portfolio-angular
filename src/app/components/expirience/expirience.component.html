@@ -1,56 +1,14 @@
-<h2 class="text-center mb-4">Work expirience</h2>
+<h2 class="text-center mb-4">{{"EXPERIENCE.TITLE" | translate}}</h2>
 <div class="row">
-    <div class="col-md-6 mb-4">
-        <div class="card shadow experience-card" data-aos="zoom-in-right">
-            <div class="card-body">
-                <h5 class="card-title">EPAM Systems</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Mar 2024 - Jun 2025 · Senior Front End Engineer</h6>
-                <p class="card-text">Migration and modernization of Thomson Reuters' project management back-office
-                    platform for USA Projects. Tecnologías: AngularJS, Angular (11 & 13), RxJS, Stencil.js, C#, ASP.NET
-                    core.</p>
+    @for(exp of experience; track $index){
+        <div class="col-md-6 mb-4">
+            <div class="card shadow experience-card" data-aos="zoom-in-right">
+                <div class="card-body">
+                    <h5 class="card-title">{{ exp.company}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ exp.dateStart | translateDate  }} - {{ exp.dateEnd | translateDate  }} · {{ exp.position }}</h6>
+                    <p class="card-text" innerH>{{ exp.description | translate }}</p>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-6 mb-4">
-        <div class="card shadow experience-card" data-aos="zoom-in-left">
-            <div class="card-body">
-                <h5 class="card-title">Vates</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Aug 2021 - Mar 2024 · Senior Front End Engineer</h6>
-                <p class="card-text">Migration and modernization of Thomson Reuters' project management back-office
-                    platform, for teams in Argentina and the United States. Tecnologías: AngularJS, Angular (11 & 13),
-                    JavaScript, TypeScript, C#, ASP.NET core, Entity Framework, Postgresql.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 mb-4">
-        <div class="card shadow experience-card" data-aos="zoom-in-right">
-            <div class="card-body">
-                <h5 class="card-title">BIZIT GLOBAL</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Mar 2020 - Aug 2021 · Front End Engineer</h6>
-                <p class="card-text">Development of a back-office platform for a european healthcare company.
-                    Tecnologías: Angular 8, TypeScript, RXJS, Jasmine, Karma, Protractor, Java, Spring Boot.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 mb-4">
-        <div class="card shadow experience-card" data-aos="zoom-in-left">
-            <div class="card-body">
-                <h5 class="card-title">KOLEKTOR</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Feb 2019 - Mar 2020 · Frontend Developer</h6>
-                <p class="card-text">Development of a web-based tax inquiry and collection system for the province of
-                    Córdoba, Argentina. Tecnologías: AngularJS, Angular 7, Angular Redux, RXJS, Bootstrap.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-md-6 mb-4">
-        <div class="card shadow experience-card" data-aos="zoom-in-right">
-            <div class="card-body">
-                <h5 class="card-title">McAfee Argentina</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Jan 2018 - Dec 2018 · Technical Intern Engineer</h6>
-                <p class="card-text">I contributed to a project responsible for maintaining whitelist-based security
-                    software. Tecnologías: 2018 JavaScript, Python, Django REST Framework, HTML, CSS, Bash, AngularJS,
-                    Bootstrap.</p>
-            </div>
-        </div>
-    </div>
+    }
 </div>

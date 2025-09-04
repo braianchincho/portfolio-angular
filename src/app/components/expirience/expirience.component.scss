@@ -5,6 +5,9 @@
 
 .experience-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .card-text {
+    white-space: pre-line;
+  }
 }
 
 .experience-card:hover {

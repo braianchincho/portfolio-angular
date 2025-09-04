@@ -8,7 +8,11 @@ import {
 import {
   provideTranslateHttpLoader
 } from '@ngx-translate/http-loader';
+import { DatePipe } from '@angular/common';
+import { registerLocaleData } from '@angular/common';
+import localeEs from '@angular/common/locales/es';
 
+registerLocaleData(localeEs);
 export const appConfig: ApplicationConfig = {
   providers: [
     provideZoneChangeDetection({ eventCoalescing: true }),
@@ -21,6 +25,7 @@ export const appConfig: ApplicationConfig = {
       }),
       fallbackLang: 'en',
       lang: 'en',
-    })
+    }),
+    DatePipe,
   ]
 };
